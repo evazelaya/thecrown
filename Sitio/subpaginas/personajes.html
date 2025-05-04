@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Personajes</title>
+  <link rel="stylesheet" href="../css/personajes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <script defer src="../js/personajes.js"></script>
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <h1 class="titulo-header">The Crown</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="episodioclave.html">Episodios Clave</a></li> <!-- Enlace correcto para episodios -->
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.php">Contacto</a></li> <!-- Cambio de contacto.html a contacto.php -->
+      </ul>
+    </nav>
+    <div class="buscador-login">
+      <div class="buscador">
+        <input type="text" placeholder="Buscar...">
+      </div>
+      <!-- Botón de Login -->
+      <div class="login-btn">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor-personajes">
+    <h2>Personajes Principales</h2>
+
+    <!-- Reina Isabel II -->
+    <section class="personaje">
+      <h3>Reina Isabel II</h3>
+      <div class="carrusel">
+        <div class="imagen-container">
+          <img src="../imagenes/isabel1.jpg" alt="Claire Foy">
+          <button class="ver-mas" data-personaje="Reina Isabel II" data-info="isabel1">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/isabel2.jpg" alt="Olivia Colman">
+          <button class="ver-mas" data-personaje="Reina Isabel II" data-info="isabel2">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/isabel3.jpg" alt="Imelda Staunton">
+          <button class="ver-mas" data-personaje="Reina Isabel II" data-info="isabel3">Ver más</button>
+        </div>
+      </div>
+      <div class="info" id="isabel1-info" style="display: none;">
+        <p>Claire Foy interpretó a la Reina Isabel II en las temporadas 1 y 2.</p>
+      </div>
+      <div class="info" id="isabel2-info" style="display: none;">
+        <p>Olivia Colman la interpretó en las temporadas 3 y 4.</p>
+      </div>
+      <div class="info" id="isabel3-info" style="display: none;">
+        <p>Imelda Staunton interpretó a la Reina Isabel II en las temporadas 5 y 6.</p>
+      </div>
+    </section>
+
+    <!-- Príncipe Felipe -->
+    <section class="personaje">
+      <h3>Príncipe Felipe</h3>
+      <div class="carrusel">
+        <div class="imagen-container">
+          <img src="../imagenes/felipe1.jpg" alt="Matt Smith">
+          <button class="ver-mas" data-personaje="Príncipe Felipe" data-info="felipe1">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/felipe2.jpg" alt="Tobias Menzies">
+          <button class="ver-mas" data-personaje="Príncipe Felipe" data-info="felipe2">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/felipe3.jpg" alt="Jonathan Pryce">
+          <button class="ver-mas" data-personaje="Príncipe Felipe" data-info="felipe3">Ver más</button>
+        </div>
+      </div>
+      <div class="info" id="felipe1-info" style="display: none;">
+        <p>Matt Smith interpretó al Príncipe Felipe en las temporadas 1 y 2.</p>
+      </div>
+      <div class="info" id="felipe2-info" style="display: none;">
+        <p>Tobias Menzies lo interpretó en las temporadas 3 y 4.</p>
+      </div>
+      <div class="info" id="felipe3-info" style="display: none;">
+        <p>Jonathan Pryce lo interpretó en las temporadas 5 y 6.</p>
+      </div>
+    </section>
+
+    <!-- Princesa Margarita -->
+    <section class="personaje">
+      <h3>Princesa Margarita</h3>
+      <div class="carrusel">
+        <div class="imagen-container">
+          <img src="../imagenes/margarita1.jpg" alt="Vanessa Kirby">
+          <button class="ver-mas" data-personaje="Princesa Margarita" data-info="margarita1">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/margarita2.jpg" alt="Helena Bonham Carter">
+          <button class="ver-mas" data-personaje="Princesa Margarita" data-info="margarita2">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/margarita3.jpg" alt="Lesley Manville">
+          <button class="ver-mas" data-personaje="Princesa Margarita" data-info="margarita3">Ver más</button>
+        </div>
+      </div>
+      <div class="info" id="margarita1-info" style="display: none;">
+        <p>Vanessa Kirby interpretó a la Princesa Margarita en las temporadas 1 y 2.</p>
+      </div>
+      <div class="info" id="margarita2-info" style="display: none;">
+        <p>Helena Bonham Carter la interpretó en las temporadas 3 y 4.</p>
+      </div>
+      <div class="info" id="margarita3-info" style="display: none;">
+        <p>Lesley Manville la interpretó en las temporadas 5 y 6.</p>
+      </div>
+    </section>
+
+    <!-- Princesa Diana -->
+    <section class="personaje">
+      <h3>Princesa Diana</h3>
+      <div class="carrusel">
+        <div class="imagen-container">
+          <img src="../imagenes/diana1.jpg" alt="Emma Corrin">
+          <button class="ver-mas" data-personaje="Princesa Diana" data-info="diana1">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/diana2.jpg" alt="Elizabeth Debicki">
+          <button class="ver-mas" data-personaje="Princesa Diana" data-info="diana2">Ver más</button>
+        </div>
+      </div>
+      <div class="info" id="diana1-info" style="display: none;">
+        <p>Emma Corrin interpretó a la Princesa Diana en la temporada 4.</p>
+      </div>
+      <div class="info" id="diana2-info" style="display: none;">
+        <p>Elizabeth Debicki la interpretó en las temporadas 5 y 6.</p>
+      </div>
+    </section>
+
+    <!-- Príncipe Carlos -->
+    <section class="personaje">
+      <h3>Príncipe Carlos</h3>
+      <div class="carrusel">
+        <div class="imagen-container">
+          <img src="../imagenes/carlos1.jpg" alt="Josh O'Connor">
+          <button class="ver-mas" data-personaje="Príncipe Carlos" data-info="carlos1">Ver más</button>
+        </div>
+        <div class="imagen-container">
+          <img src="../imagenes/carlos2.jpg" alt="Dominic West">
+          <button class="ver-mas" data-personaje="Príncipe Carlos" data-info="carlos2">Ver más</button>
+        </div>
+      </div>
+      <div class="info" id="carlos1-info" style="display: none;">
+        <p>Josh O'Connor interpretó al Príncipe Carlos en las temporadas 3 y 4.</p>
+      </div>
+      <div class="info" id="carlos2-info" style="display: none;">
+        <p>Dominic West lo interpretó en las temporadas 5 y 6.</p>
+      </div>
+    </section>
+
+    <!-- Margaret Thatcher -->
+    <section class="personaje">
+      <h3>Margaret Thatcher</h3>
+      <div class="carrusel">
+        <div class="imagen-container">
+          <img src="../imagenes/margaret1.jpg" alt="Gillian Anderson">
+          <button class="ver-mas" data-personaje="Margaret Thatcher" data-info="margaret1">Ver más</button>
+        </div>
+      </div>
+      <div class="info" id="margaret1-info" style="display: none;">
+        <p>Gillian Anderson interpretó a Margaret Thatcher en la temporada 4.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-contenido">
+      <p class="suscribite">Suscríbete para recibir todas las novedades</p>
+      <div class="redes">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

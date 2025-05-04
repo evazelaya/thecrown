@@ -1,0 +1,508 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  background-color: #c7af6d;
+  color: white;
+}
+
+/* ENCABEZADO */
+.encabezado {
+  background-color: #021228;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.titulo-header {
+  font-size: 20px;
+  color: #c7af6d;
+  margin: 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #c7af6d;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #c7af6d;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Estilo para el buscador y el botón de login */
+.buscador-login {
+  display: flex;
+  align-items: center;
+}
+
+.buscador {
+  margin-right: 10px;
+}
+
+.buscador input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 150px;
+  font-size: 12px;
+}
+
+/* Botón de Login */
+.login-btn a {
+  background-color: #c7af6d !important; /* Color dorado */
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #021228;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn a:hover {
+  background-color: #a88f56 !important; /* Color dorado más oscuro al hacer hover */
+}
+
+/* HISTORIA */
+main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #800020;
+}
+
+section {
+  margin-top: 30px;
+}
+
+section h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #800020;
+}
+
+.historia-contenedor {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.historia-imagen img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.historia-texto {
+  width: 35%;
+}
+
+.titulo-historia {
+  font-size: 28px;
+  font-weight: bold;
+  color: #800020;
+  margin-bottom: 20px;
+}
+
+.introduccion-texto {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #800020;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* Información adicional sobre el director */
+.informacion-adicional {
+  margin-top: 40px;
+}
+
+.informacion-director {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.imagen-director {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.texto-director {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.informacion-adicional h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #800020;
+}
+
+.informacion-adicional p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* FOOTER */
+footer {
+  background-color: #021228;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+footer .suscribite {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .redes {
+  display: flex;
+  gap: 12px;
+}
+
+footer .redes a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .redes a:hover {
+  color: #c7af6d;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .historia-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-imagen img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .historia-texto {
+    width: 100%;
+  }
+
+  .encabezado,
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buscador {
+    margin-top: 10px;
+  }
+
+  section h3 {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

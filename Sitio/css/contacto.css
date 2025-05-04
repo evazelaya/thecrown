@@ -1,0 +1,237 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  background-color: #c7af6d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ENCABEZADO */
+.encabezado {
+  background-color: #021228;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.titulo-header {
+  font-size: 20px;
+  color: #c7af6d;
+  margin: 0;
+}
+
+/* MENÚ */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centrado */
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'DM Serif Display', serif; /* Usar la misma tipografía */
+  font-weight: bold; /* Negrita */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #c7af6d;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #c7af6d;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Buscador y Login */
+.buscador-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buscador input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 150px;
+  font-size: 12px;
+}
+
+.login-btn a {
+  background-color: #c7af6d;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #021228;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold; /* Negrita */
+  font-family: 'DM Serif Display', serif; /* Mismo tipo de letra */
+  transition: background-color 0.3s ease;
+}
+
+.login-btn a:hover {
+  background-color: #a88f56;
+}
+
+/* FORMULARIO DE CONTACTO */
+.contacto-form {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 40%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #021228;
+  margin-bottom: 15px;
+}
+
+.contacto-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: #c7af6d;
+}
+
+.contacto-form button {
+  background-color: #c7af6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+  background-color: #a88f56;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #021228;
+  color: #ffffff;
+  padding: 6px 20px; /* Reducido el padding para que sea más bajo */
+  font-size: 14px;
+  font-family: 'DM Serif Display', serif;
+  text-align: left; /* Alineación del texto a la izquierda */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+  margin-top: auto; /* Aseguramos que quede al final */
+  position: relative;
+  bottom: 0;
+}
+
+footer .suscribite {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .redes {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end; /* Alineación de los íconos a la derecha */
+  margin-top: 10px;
+}
+
+footer .redes a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .redes a:hover {
+  color: #c7af6d;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 12px 20px; /* Ajuste de padding */
+  }
+
+  footer .redes {
+    justify-content: center; /* Centrar los íconos en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,480 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  background-color: #c7af6d;
+  color: white;
+}
+
+/* ENCABEZADO */
+.encabezado {
+  background-color: #021228;
+  display: flex;
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+  align-items: center;
+  padding: 6px 16px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.titulo-header {
+  font-size: 20px;
+  color: #c7af6d;
+  margin: 0;
+  margin-right: 40px; /* Espacio entre el título y el menú */
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #c7af6d;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #c7af6d;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.buscador-login {
+  display: flex;
+  align-items: center;
+}
+
+.buscador {
+  margin-right: 10px; /* Reduce el espacio entre el buscador y el botón */
+}
+
+.buscador input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 150px;
+  font-size: 12px;
+}
+
+/* Botón de Login */
+.login-btn a {
+  background-color: #c7af6d !important; /* Color dorado */
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #021228;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn a:hover {
+  background-color: #a88f56 !important; /* Color dorado más oscuro al hacer hover */
+}
+
+/* CARRUSEL CINTA */
+.banner-cinta {
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250px * 8);
+  animation: scroll 25s linear infinite;
+  gap: 20px;
+}
+
+.slider-track img {
+  height: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+  padding: 40px 30px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* TARJETAS */
+.bloques-elegantes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.tarjeta {
+  background-size: cover;
+  background-position: center;
+  width: 260px;
+  height: 300px;
+  border-radius: 16px;
+  display: flex;
+  align-items: end;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.contenido-tarjeta {
+  background: rgba(2, 18, 40, 0.85);
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 0 0 16px 16px;
+  text-align: center;
+}
+
+.contenido-tarjeta h3 {
+  color: #c7af6d;
+  margin-bottom: 10px;
+}
+
+.btn-minimal {
+  background-color: #c7af6d;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #021228;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-minimal:hover {
+  background-color: #a88f56;
+}
+
+/* FOOTER */
+footer {
+  background-color: #021228;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+footer .suscribite {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .redes {
+  display: flex;
+  gap: 12px;
+}
+
+footer .redes a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .redes a:hover {
+  color: #c7af6d;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .encabezado,
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buscador {
+    margin-top: 10px;
+  }
+
+  .slider-track img {
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

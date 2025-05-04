@@ -1,0 +1,493 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  background-color: #c7af6d;
+  color: white;
+}
+
+/* ENCABEZADO */
+.encabezado {
+  background-color: #021228;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.titulo-header {
+  font-size: 20px;
+  color: #c7af6d;
+  margin: 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #c7af6d;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #c7af6d;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Estilo para el buscador y el botón de login */
+.buscador-login {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Esto asegura que haya espacio entre el buscador y el botón */
+}
+
+.buscador {
+  margin-right: 0; /* Elimino cualquier margen para evitar superposiciones */
+}
+
+.buscador input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 150px;
+  font-size: 12px;
+}
+
+/* Botón de Login - Igual que en Inicio */
+.login-btn a {
+  background-color: #c7af6d !important; /* Color dorado */
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #021228;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn a:hover {
+  background-color: #a88f56 !important; /* Color dorado más oscuro al hacer hover */
+}
+
+/* PERSONAJES */
+.contenedor-personajes {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contenedor-personajes h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.personaje {
+  margin-bottom: 40px;
+}
+
+.personaje h3 {
+  margin-bottom: 10px;
+  color: #021228;
+}
+
+.carrusel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.imagen-container {
+  position: relative;
+  display: inline-block;
+}
+
+.carrusel img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrusel img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón Ver más sobre la imagen */
+.ver-mas {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #021228;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.ver-mas:hover {
+  background-color: #c7af6d;
+}
+
+/* Información debajo de la imagen */
+.info {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #021228;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #021228;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+footer .suscribite {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .redes {
+  display: flex;
+  gap: 12px;
+}
+
+footer .redes a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .redes a:hover {
+  color: #c7af6d;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .encabezado,
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buscador {
+    margin-top: 10px;
+  }
+
+  .carrusel {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carrusel img {
+    width: 45%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
